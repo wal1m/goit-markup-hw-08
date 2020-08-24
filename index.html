@@ -13,32 +13,41 @@
     <!-- шапка сайта -->
        <header class="header">
         <div class="container">
-          <nav class="navigation">
-            <a class="logo-link link" href="./index.html">Web <span class="studio-black">Studio</span></a>
-            <ul class="novigation-list list">
-              <li class="novigation-list-item"><a class="novigation-list-link active link" href="./index.html">Студия</a></li>
-              <li class="novigation-list-item"><a class="novigation-list-link link" href="./portfolio.html">Портфолио</a></li>
-              <li class="novigation-list-item"><a class="novigation-list-link link" href="">Контакты</a></li>
-            </ul>
-          </nav>
-          
-          <address class="header-address">
-            <ul class="header-address-list list">
-              <li class="header-address-list-item"><a class="header-address-list-link link"
-                  href="mailto:info@devstudio.com">
-                  <svg class="header-address-list-link-svg">
-                    <use href="./images/sprite.svg#mail">
-                    </use>
-                  </svg>
-                  info@devstudio.com</a></li>
-              <li class="header-address-list-item"><a class="header-address-list-link link" href="tel:+380961111111">
-                <svg class="header-address-list-link-svg tel">
-                  <use href="./images/sprite.svg#tel">
-                  </use>
-                </svg>
-                +38 096 111 11 11</a></li>
-            </ul>
-          </address>
+          <a class="logo-link link" href="./index.html">Web<span class="studio-black">Studio</span></a>
+          <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu-wraper" data-menu-button>
+            <svg width="40" height="40">
+              <use class="nav-menu" href="./images/sprite.svg#nav-menu-40">
+              </use>
+              <use class="close-nav-menu" href="./images/sprite.svg#close-40">
+              </use>
+            </svg>
+          </button>
+          <div class="menu-wraper" data-menu>
+            <nav class="navigation">
+              <ul class="novigation-list list">
+                <li class="novigation-list-item"><a class="novigation-list-link active link" href="./index.html">Студия</a></li>
+                <li class="novigation-list-item"><a class="novigation-list-link link" href="./portfolio.html">Портфолио</a></li>
+                <li class="novigation-list-item"><a class="novigation-list-link link" href="">Контакты</a></li>
+              </ul>
+            </nav>
+            
+            <address class="header-address">
+              <ul class="header-address-list list">
+                <li class="header-address-list-item"><a class="header-address-list-link link" href="mailto:info@devstudio.com">
+                    <svg class="header-address-list-link-svg">
+                      <use href="./images/sprite.svg#mail">
+                      </use>
+                    </svg>
+                    info@devstudio.com</a></li>
+                <li class="header-address-list-item"><a class="header-address-list-link link" href="tel:+380961111111">
+                    <svg class="header-address-list-link-svg tel">
+                      <use href="./images/sprite.svg#tel">
+                      </use>
+                    </svg>
+                    +38 096 111 11 11</a></li>
+              </ul>
+            </address>
+          </div>
         </div>
       
       </header>
@@ -101,7 +110,7 @@
           </div>
         </section>
       <!-- чем мы занимаемся -->
-        <section class="our-work section">
+        <!-- <section class="our-work section">
           <div class="container">
             <h2 class="our-work-title title">Чем мы занимаемся</h2>
             <ul class="our-work-list list">
@@ -116,10 +125,10 @@
               </li>
             </ul>
             </div>
-            </section>
+            </section> -->
 
                 <!-- Наша команда -->
-      <section class="team section team-section">
+      <!-- <section class="team section team-section">
         <div class="container">
           <h2 class="team-title title">Наша команда</h2>
           <ul class="team-list list">
@@ -281,9 +290,9 @@
           
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Постоянные клиенты -->
-      <section class="section-clients section">
+      <!-- <section class="section-clients section">
         <div class="container">
           <h2 class="clients-title title">Постоянные клиенты</h2>
           <ul class="clients-list list">
@@ -337,11 +346,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
     </main>
     <!-- Подвал -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="footer-container container">
         <div class="footer-block-address">
           <a class="logo-link link" href="./index.html">Web <span class="studio-white">Studio</span></a>
@@ -399,9 +408,9 @@
                   </a>
                 </li>
               </ul>
-        </div>
+        </div> -->
         <!-- Форма -->
-        <div class="footer-block-forma">
+        <!-- <div class="footer-block-forma">
           <b class="footer-forma">Подпишитесь на рассылку
           </b>
           
@@ -417,9 +426,9 @@
           </form>
       </div>
       </div>
-    </footer>
+    </footer> -->
     <!-- Модальное окно -->
-    <div data-modal class="backdrop is-hidden">
+    <!-- <div data-modal class="backdrop is-hidden">
       <form action="#" class="modal-form">
         <button data-modal-close class="madal-close-btn" type="button">
           <svg class="madal-close-btn-svg">
@@ -465,7 +474,8 @@
         </label>
         <button type="submit" class="madal-btn btn">Отправить</button>
       </form>
-    </div>
+    </div> -->
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

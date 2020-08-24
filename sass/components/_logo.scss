@@ -1,9 +1,33 @@
 .logo-link {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.167;
   letter-spacing: 0.03em;
-  margin-right: 85px;
-  color: #2196F3;
+  color: $accent-color;
+}
+.studio-black {
+  color: $title-color;
+}
+@media screen and (max-width: 767px) {
+  .logo-link {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .logo-link {
+        margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-link {
+  font-size: 26px;
+  line-height: 1.192;
+  margin-right: 93px;
+  }
+  .studio-black {
+  color: #000000;
+}
 }
