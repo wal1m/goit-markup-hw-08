@@ -14,6 +14,7 @@
 .header .container {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .novigation-list-link {
@@ -93,7 +94,7 @@ align-items: center;
         }
     }
 }
- .novigation-list-item,
+.novigation-list-item,
 .header-address-list-link {
  font-size: 18px;
  line-height: 1.167;
@@ -198,6 +199,9 @@ margin-top: 8px;
     }
 }
 @media screen and (min-width: 1200px) {
+    .hwader {
+        min-width: 1200px;
+    }
     .header-address {
         display: flex;
         align-items: center;

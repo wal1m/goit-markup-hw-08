@@ -42,14 +42,14 @@ height: 400px;
 }
 }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
 width: 768px;
 height: 400px;
  background-image: linear-gradient(
       rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url("../images/hero/bg-hero-768.jpg");
-    //  background-repeat: no-repeat;
+     background-repeat: no-repeat;
    
   @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
@@ -71,8 +71,7 @@ padding-top: 118px;
 
  @media screen and (min-width: 1200px) {
      .hero {
-       min-width: 1600px;
-// width: 1200px;
+max-width: 1600px;
 height: 600px;
 background-image: linear-gradient(
       rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
