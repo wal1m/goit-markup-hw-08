@@ -10,38 +10,48 @@
     </head>
     <body>
         <!-- шапка сайта -->
-        <header class="header portfolio">
+        <header class="header">
             <div class="container">
-                <nav class="navigation">
-                    <a class="logo-link link" href="./index.html">Web <span class="studio-black">Studio</span></a>
-                    <ul class="novigation-list list">
-                        <li class="novigation-list-item"><a class="novigation-list-link studio link"
-                                href="./index.html">Студия</a></li>
-                        <li class="novigation-list-item"><a class="novigation-list-link portfolio active link"
-                                href="./portfolio.html">Портфолио</a></li>
-                        <li class="novigation-list-item"><a class="novigation-list-link contacts link" href="">Контакты</a></li>
-                    </ul>
-                </nav>
+                <a class="logo-link link" href="./index.html">Web<span class="studio-black">Studio</span></a>
+                <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu-wraper" data-menu-button>
+                    <svg width="40" height="40">
+                        <use class="nav-menu" href="./images/sprite.svg#nav-menu-40">
+                        </use>
+                        <use class="close-nav-menu" href="./images/sprite.svg#close-40">
+                        </use>
+                    </svg>
+                </button>
+                <div class="menu-wraper" data-menu>
+                    <nav class="navigation">
+                        <ul class="novigation-list list">
+                            <li class="novigation-list-item"><a class="novigation-list-link link"
+                                    href="./index.html">Студия</a></li>
+                            <li class="novigation-list-item"><a class="novigation-list-link active link"
+                                    href="./portfolio.html">Портфолио</a></li>
+                            <li class="novigation-list-item"><a class="novigation-list-link link" href="">Контакты</a></li>
+                        </ul>
+                    </nav>
         
-                <address class="header-address">
-                    <ul class="header-address-list list">
-                        <li class="header-address-list-item"><a class="header-address-list-link link"
-                                href="mailto:info@devstudio.com">
-                                <svg class="header-address-list-link-svg">
-                                    <use href="./images/sprite.svg#mail">
-                                    </use>
-                                </svg>
-                                info@devstudio.com</a></li>
-                        <li class="header-address-list-item"><a class="header-address-list-link link" href="tel:+380961111111">
-                                <svg class="header-address-list-link-svg tel">
-                                    <use href="./images/sprite.svg#tel">
-                                    </use>
-                                </svg>
-                                +38 096 111 11 11</a></li>
-                    </ul>
-                </address>
+                    <address class="header-address">
+                        <ul class="header-address-list list">
+                            <li class="header-address-list-item"><a class="header-address-list-link link"
+                                    href="mailto:info@devstudio.com">
+                                    <svg class="header-address-list-link-svg">
+                                        <use href="./images/sprite.svg#mail">
+                                        </use>
+                                    </svg>
+                                    info@devstudio.com</a></li>
+                            <li class="header-address-list-item"><a class="header-address-list-link link"
+                                    href="tel:+380961111111">
+                                    <svg class="header-address-list-link-svg tel">
+                                        <use href="./images/sprite.svg#tel">
+                                        </use>
+                                    </svg>
+                                    +38 096 111 11 11</a></li>
+                        </ul>
+                    </address>
+                </div>
             </div>
-        
         </header>
         <main>
                     <!-- фильтр -->
@@ -73,7 +83,12 @@
                                 <li class="development-list-item">
                                     <a class="development-list-link link" href="">
                                         <div class="development-list-img-block">
-                                            <img class="development-list-img" src="./images/portfolio/project-1.jpg" alt="">
+                                            <picture>
+                                                <source srcset="./images/portfolio/desktop/project-1.jpg 1x, ./images/portfolio/desktop/project-1@2x.jpg 2x" media="(min-width: 1200px)">
+                                                <source srcset="./images/portfolio/tablet/project-1.jpg 1x, ./images/portfolio/tablet/project-1@2x.jpg 2x" media="(min-width: 768px)">
+                                                <source srcset="./images/portfolio/mobile/project-1.jpg 1x, ./images/portfolio/mobile/project-1@2x.jpg 2x" media="(min-width: 480px)">
+                                                <img class="development-list-img" src="./images/portfolio/tablet/project-1.jpg" alt="проект-1">
+                                            </picture>
                                             <div class="overlay">
                                             <p class="description-text">
                                                 Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для
@@ -93,7 +108,12 @@
                                 <li class="development-list-item">
                                     <a class="development-list-link link" href="">
                                         <div class="development-list-img-block">
-                                            <img class="development-list-img" src="./images/portfolio/project-2.jpg" alt="">
+                                            <picture>
+                                                <source srcset="./images/portfolio/desktop/project-2.jpg 1x, ./images/portfolio/desktop/project-2@2x.jpg 2x" media="(min-width: 1200px)">
+                                                <source srcset="./images/portfolio/tablet/project-2.jpg 1x, ./images/portfolio/tablet/project-2@2x.jpg 2x" media="(min-width: 768px)">
+                                                <source srcset="./images/portfolio/mobile/project-2.jpg 1x, ./images/portfolio/mobile/project-2@2x.jpg 2x" media="(min-width: 480px)">
+                                                <img class="development-list-img" src="./images/portfolio/tablet/project-2.jpg" alt="проект-2">
+                                            </picture>
                                             <div class="overlay">
                                                 <p class="description-text">
                                                     Основные изменения в новой версии программы: исправлены старые баги, добавлены новые.
@@ -111,7 +131,12 @@
                                 <li class="development-list-item">
                                     <a class="development-list-link link" href="">
                                         <div class="development-list-img-block">
-                                            <img class="development-list-img" src="./images/portfolio/project-3.jpg" alt="">
+                                            <picture>
+                                                <source srcset="./images/portfolio/desktop/project-3.jpg 1x, ./images/portfolio/desktop/project-3@2x.jpg 2x" media="(min-width: 1200px)">
+                                                <source srcset="./images/portfolio/tablet/project-3.jpg 1x, ./images/portfolio/tablet/project-3@2x.jpg 2x" media="(min-width: 768px)">
+                                                <source srcset="./images/portfolio/mobile/project-3.jpg 1x, ./images/portfolio/mobile/project-3@2x.jpg 2x" media="(min-width: 480px)">
+                                                <img class="development-list-img" src="./images/portfolio/tablet/project-3.jpg" alt="проект-3">
+                                            </picture>
                                             <div class="overlay">
                                                 <p class="description-text">
                                                     Существует два вида языков программирования: одни – все ругают, другими не пользуются.
@@ -129,7 +154,12 @@
                                 <li class="development-list-item">
                                     <a class="development-list-link link" href="">
                                         <div class="development-list-img-block">
-                                            <img class="development-list-img" src="./images/portfolio/project-4.jpg" alt="">
+                                            <picture>
+                                                <source srcset="./images/portfolio/desktop/project-4.jpg 1x, ./images/portfolio/desktop/project-4@2x.jpg 2x" media="(min-width: 1200px)">
+                                                <source srcset="./images/portfolio/tablet/project-4.jpg 1x, ./images/portfolio/tablet/project-4@2x.jpg 2x" media="(min-width: 768px)">
+                                                <source srcset="./images/portfolio/mobile/project-4.jpg 1x, ./images/portfolio/mobile/project-4@2x.jpg 2x" media="(min-width: 480px)">
+                                                <img class="development-list-img" src="./images/portfolio/tablet/project-4.jpg" alt="проект-4">
+                                            </picture>
                                             <div class="overlay">
                                                 <p class="description-text">
                                                     Особенности разработки любого программного продукта: катастрофически не хватает времени на то, чтобы избавиться от
@@ -149,7 +179,12 @@
                                 <li class="development-list-item">
                                     <a class="development-list-link link" href="">
                                         <div class="development-list-img-block">
-                                            <img class="development-list-img" src="./images/portfolio/project-5.jpg" alt="">
+                                            <picture>
+                                                <source srcset="./images/portfolio/desktop/project-5.jpg 1x, ./images/portfolio/desktop/project-5@2x.jpg 2x" media="(min-width: 1200px)">
+                                                <source srcset="./images/portfolio/tablet/project-5.jpg 1x, ./images/portfolio/tablet/project-5@2x.jpg 2x" media="(min-width: 768px)">
+                                                <source srcset="./images/portfolio/mobile/project-5.jpg 1x, ./images/portfolio/mobile/project-5@2x.jpg 2x" media="(min-width: 480px)">
+                                                <img class="development-list-img" src="./images/portfolio/tablet/project-5.jpg" alt="проект-5">
+                                            </picture>
                                             <div class="overlay">
                                                 <p class="description-text">
                                                     Программирование состоит на 10% из строгой науки, на 20% из смекалки и вдохновения, и на 70% из попыток совместить
@@ -168,7 +203,12 @@
                                 <li class="development-list-item">
                                     <a class="development-list-link link" href="">
                                         <div class="development-list-img-block">
-                                            <img class="development-list-img" src="./images/portfolio/project-6.jpg" alt="">
+                                            <picture>
+                                                <source srcset="./images/portfolio/desktop/project-6.jpg 1x, ./images/portfolio/desktop/project-6@2x.jpg 2x" media="(min-width: 1200px)">
+                                                <source srcset="./images/portfolio/tablet/project-6.jpg 1x, ./images/portfolio/tablet/project-6@2x.jpg 2x" media="(min-width: 768px)">
+                                                <source srcset="./images/portfolio/mobile/project-6.jpg 1x, ./images/portfolio/mobile/project-6@2x.jpg 2x" media="(min-width: 480px)">
+                                                <img class="development-list-img" src="./images/portfolio/tablet/project-6.jpg" alt="проект-6">
+                                            </picture>
                                             <div class="overlay">
                                                 <p class="description-text">
                                                     Если вы посмотрите на код, который вы писали более полугода назад, то, скорей всего, вам покажется, что автор – кто-то
@@ -186,8 +226,12 @@
                                 </li>
                                 <li class="development-list-item">
                                     <a class="development-list-link link" href="">
-                                        <div class="development-list-img-block">
-                                            <img class="development-list-img" src="./images/portfolio/project-7.jpg" alt="">
+                                        <div class="development-list-img-block"><picture>
+                                            <source srcset="./images/portfolio/desktop/project-7.jpg 1x, ./images/portfolio/desktop/project-7@2x.jpg 2x" media="(min-width: 1200px)">
+                                            <source srcset="./images/portfolio/tablet/project-7.jpg 1x, ./images/portfolio/tablet/project-7@2x.jpg 2x" media="(min-width: 768px)">
+                                            <source srcset="./images/portfolio/mobile/project-7.jpg 1x, ./images/portfolio/mobile/project-7@2x.jpg 2x" media="(min-width: 480px)">
+                                            <img class="development-list-img" src="./images/portfolio/tablet/project-7.jpg" alt="проект-7">
+                                        </picture>
                                             <div class="overlay">
                                                 <p class="description-text">
                                                     Никогда не пишите на пределе своих талантов! Помните: отладка – всегда в два раза сложнее написания кода. И если вы
@@ -206,7 +250,12 @@
                                 <li class="development-list-item">
                                     <a class="development-list-link link" href="">
                                         <div class="development-list-img-block">
-                                            <img class="development-list-img" src="./images/portfolio/project-8.jpg" alt="">
+                                            <picture>
+                                                <source srcset="./images/portfolio/desktop/project-8.jpg 1x, ./images/portfolio/desktop/project-8@2x.jpg 2x" media="(min-width: 1200px)">
+                                                <source srcset="./images/portfolio/tablet/project-8.jpg 1x, ./images/portfolio/tablet/project-8@2x.jpg 2x" media="(min-width: 768px)">
+                                                <source srcset="./images/portfolio/mobile/project-8.jpg 1x, ./images/portfolio/mobile/project-8@2x.jpg 2x" media="(min-width: 480px)">
+                                                <img class="development-list-img" src="./images/portfolio/tablet/project-8.jpg" alt="проект-8">
+                                            </picture>
                                             <div class="overlay">
                                                 <p class="description-text">
                                                     Задумайтесь, какое количество психических сил затрачено программистами на попытки понять фундаментальное различие между
@@ -225,7 +274,12 @@
                                 <li class="development-list-item">
                                     <a class="development-list-link link" href="">
                                         <div class="development-list-img-block">
-                                            <img class="development-list-img" src="./images/portfolio/project-9.jpg" alt="">
+                                            <picture>
+                                                <source srcset="./images/portfolio/desktop/project-9.jpg 1x, ./images/portfolio/desktop/project-9@2x.jpg 2x" media="(min-width: 1200px)">
+                                                <source srcset="./images/portfolio/tablet/project-9.jpg 1x, ./images/portfolio/tablet/project-9@2x.jpg 2x" media="(min-width: 768px)">
+                                                <source srcset="./images/portfolio/mobile/project-9.jpg 1x, ./images/portfolio/mobile/project-9@2x.jpg 2x" media="(min-width: 480px)">
+                                                <img class="development-list-img" src="./images/portfolio/tablet/project-9.jpg" alt="проект-9">
+                                            </picture>
                                             <div class="overlay">
                                                 <p class="description-text">
                                                     "Приложение "Дверь" совершило недопустимую операцию и будет закрыто. Вы не можете открыть дверь, потому, что произошла
@@ -249,62 +303,64 @@
                     <!-- Подвал -->
 <footer class="footer">
     <div class="footer-container container">
-        <div class="footer-block-address">
-            <a class="logo-link link" href="./index.html">Web <span class="studio-white">Studio</span></a>
-            <ul class="list">
-                <li>
-                    <address class="footer-address address">
-                        г. Киев, пр-т Леси Украинки, 26
-                    </address>
-                </li>
-                <li>
-                    <address class="address">
-                        <a class="footer-address-list-link link" href="mailto:info@example.com">info@example.com</a>
-                    </address>
-                </li>
-                <li>
-                    <address class="address">
-                        <a class="footer-address-list-link link" href="tel:+380961111111">+38 099 111 11 11</a>
-                    </address>
-                </li>
-            </ul>
-        </div>
-        <div class="footer-block-join">
-            <b class="footer-join">присоединяйтесь</b>
-            <ul class="social-list-link">
-                <li class="social-list-item">
-                    <a class="social-list-item-link link" href="" aria-label="иконка инстаграма">
-                        <svg class="social-list-item-svg">
-                            <use href="./images/sprite.svg#instagram">
-                            </use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="social-list-item">
-                    <a class="social-list-item-link link" href="" aria-label="иконка твитера">
-                        <svg class="social-list-item-svg">
-                            <use href="./images/sprite.svg#twitter">
-                            </use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="social-list-item">
-                    <a class="social-list-item-link link" href="" aria-label="иконка фейсбука">
-                        <svg class="social-list-item-svg">
-                            <use href="./images/sprite.svg#facebook">
-                            </use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="social-list-item">
-                    <a class="social-list-item-link link" href="" aria-label="иконка ликедина">
-                        <svg class="social-list-item-svg">
-                            <use href="./images/sprite.svg#linkedin">
-                            </use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
+        <div class="contact-block">
+            <div class="footer-block-address">
+                <a class="logo-link link" href="./index.html">Web<span class="studio-white">Studio</span></a>
+                <ul class="address-list list">
+                    <li class="footer-address-list">
+                        <address class="footer-address address">
+                            г. Киев, пр-т Леси Украинки, 26
+                        </address>
+                    </li>
+                    <li class="footer-address-list">
+                        <address class="address">
+                            <a class="footer-address-list-link link" href="mailto:info@example.com">info@example.com</a>
+                        </address>
+                    </li>
+                    <li class="footer-address-list">
+                        <address class="address">
+                            <a class="footer-address-list-link link" href="tel:+380961111111">+38 099 111 11 11</a>
+                        </address>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-block-join">
+                <b class="footer-join">присоединяйтесь</b>
+                <ul class="social-list-link">
+                    <li class="social-list-item">
+                        <a class="social-list-item-link link" href="" aria-label="иконка инстаграма">
+                            <svg class="social-list-item-svg">
+                                <use href="./images/sprite.svg#instagram">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list-item">
+                        <a class="social-list-item-link link" href="" aria-label="иконка твитера">
+                            <svg class="social-list-item-svg">
+                                <use href="./images/sprite.svg#twitter">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list-item">
+                        <a class="social-list-item-link link" href="" aria-label="иконка фейсбука">
+                            <svg class="social-list-item-svg">
+                                <use href="./images/sprite.svg#facebook">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list-item">
+                        <a class="social-list-item-link link" href="" aria-label="иконка ликедина">
+                            <svg class="social-list-item-svg">
+                                <use href="./images/sprite.svg#linkedin">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
         <!-- Форма -->
         <div class="footer-block-forma">

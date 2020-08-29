@@ -1484,9 +1484,7 @@ img {
 /* portfolio */
 .filter-list {
   display: flex;
-  padding-top: 94px;
-  margin-bottom: 50px;
-  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .filter-list-item:not(:last-child) {
@@ -1519,18 +1517,6 @@ img {
   flex-wrap: wrap;
 }
 
-.development-list-item:not(:nth-child(3n)) {
-  margin-right: 30px;
-}
-
-.development-list-item:not(:nth-last-child(-n + 3)) {
-  margin-bottom: 30px;
-}
-
-.development-list-link {
-  width: 370px;
-}
-
 .development-list-link:hover, .development-list-link:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
@@ -1541,8 +1527,8 @@ img {
 
 .development-list-img-block {
   position: relative;
+  height: 294px;
   overflow: hidden;
-  /* margin-bottom: 20px; */
 }
 
 .project {
@@ -1552,7 +1538,6 @@ img {
   letter-spacing: 0.06em;
   color: #212121;
   margin-bottom: 4px;
-  margin-left: 24px;
 }
 
 .description {
@@ -1562,13 +1547,13 @@ img {
   letter-spacing: 0.03em;
   color: #757575;
   margin-bottom: 20px;
-  margin-left: 24px;
 }
 
 .project-block {
   border: 1px solid #EEEEEE;
   border-top: none;
   padding-top: 20px;
+  padding-left: 24px;
 }
 
 .overlay {
@@ -1592,5 +1577,57 @@ img {
   padding-left: 24px;
   padding-right: 24px;
   align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .filter .container {
+    margin-bottom: 40px;
+  }
+  .development-list-img {
+    width: 450px;
+  }
+  .filter-list-item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 15px;
+  }
+  .development-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .filter .container {
+    margin-bottom: 30px;
+  }
+  .development-list-item:nth-child(odd) {
+    margin-right: 30px;
+  }
+  .development-list-item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
+  }
+  .development-list-link {
+    width: 354px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .filter .container {
+    padding-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter .container {
+    padding-top: 94px;
+    margin-bottom: 34px;
+  }
+  .development-list-link {
+    width: 370px;
+  }
+  .development-list-item:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+  .development-list-item:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 30px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
